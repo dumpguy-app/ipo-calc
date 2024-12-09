@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPO Allotment Chance Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>IPO Allotment Chance Calculator</h1>
+
+        <!-- Retail Inputs -->
+        <div class="form-group">
+            <label for="retailApplications">Retail Total Applications:</label>
+            <input type="number" id="retailApplications" placeholder="Enter Retail Total Applications" required min="0">
+        </div>
+        <div class="form-group">
+            <label for="retailLots">Retail Total Lots Offered:</label>
+            <input type="number" id="retailLots" placeholder="Enter Retail Total Lots Offered" required min="0">
+        </div>
+
+        <!-- NII Inputs -->
+        <div class="form-group">
+            <label for="niiApplications">NII Total Applications:</label>
+            <input type="number" id="niiApplications" placeholder="Enter NII Total Applications" required min="0">
+        </div>
+        <div class="form-group">
+            <label for="niiLots">NII Total Lots Offered:</label>
+            <input type="number" id="niiLots" placeholder="Enter NII Total Lots Offered" required min="0">
+        </div>
+
+        <!-- Calculate Button -->
+        <button id="calculateBtn">Calculate</button>
+
+        <!-- Output Results -->
+        <div id="results" class="results">
+            <p><strong>Results will appear here...</strong></p>
+        </div>
+
+        <!-- External Links -->
+        <div class="links">
+            <button onclick="window.open('https://www.chittorgarh.com/report/ipo-subscription-status-live-bidding-data-bse-nse/21/', '_blank')">Chittorgarh</button>
+            <button onclick="window.open('https://www.investorgain.com/report/ipo-subscription-live/333/', '_blank')">Investor Gain</button>
+        </div>
+
+        <!-- Reset Button -->
+        <button id="resetBtn">Reset</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
